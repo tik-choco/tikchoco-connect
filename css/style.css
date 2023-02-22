@@ -58,6 +58,20 @@ li {
   content: "";
   width: 28%;
 }
+.news-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.news-title::before,
+.news-title::after {
+  border-top: 1px solid;
+  content: "";
+  width: 28%;
+}
 
 /*-------------------------------------------
 ヘッダー
@@ -93,11 +107,30 @@ Video
   width: 100%;
   height: 100vh;
 }
+#news_video {
+  position:initial;
+  overflow: hidden;
+width: 100%;
+height: 120px;
+}
 /*
 「position: fixed;」で動画を固定し、「top: -220px;」で表示位置を調整
 z-indexでマイナスを設定して、他のコンテンツの下に隠れるようにする
 */
 #video .bg-video {
+  position: fixed;
+  z-index: -10;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%,-50%);
+}
+
+#news_video .bg-video {
   position: fixed;
   z-index: -10;
   top: 50%;
@@ -123,7 +156,66 @@ z-indexでマイナスを設定して、他のコンテンツの下に隠れる�
         min-height: 100%;
         transform: translate(-50%,-50%);
       }
+      #news_video .bg-video {
+        position: fixed;
+        z-index: -10;
+        top: 50%;
+        left: 50%;
+        display: block;
+        width: auto;
+        height: auto;
+        min-width: 100%;
+        min-height: 100%;
+        transform: translate(-50%,-50%);
+      }
   }
+
+  /* 背景に黒の透過グラデーションを設定 */
+#news_text {
+  background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8));
+  color: #fff;
+}
+#news_text .list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#news_text .list li {
+  width: 47%;
+  border: solid 1px #fff;
+  margin-bottom: 50px;
+  position: relative;
+}
+/* 下段の2つはマージンを設定しない */
+#news_text .list li:last-child,
+#news_text .list li:nth-last-child(2) {
+  margin-bottom: 0;
+}
+#news_text .list li a {
+  display: block;
+}
+/* 疑似要素を使用して、テキストの下に「box-shadow」で影を付ける */
+#news_text .list li a::after {
+  content: "";
+  box-shadow: 0 -30px 15px -1px #2e2e2e inset;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#news_text .list .name {
+  color: #fff;
+  font-size: 0.75rem;
+  position: absolute;
+  bottom: 4px;
+  left: 7px;
+  z-index: 5;
+}
+#news_text p{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 
 /*-------------------------------------------
 Project
@@ -466,6 +558,9 @@ SP
   .wrapper {
     padding: 60px 20px;
   }
+  .news_wrapper {
+    padding: 120px;
+  }
   .site-title {
     width: 180px;
     margin-bottom: 0;
@@ -477,8 +572,16 @@ SP
     font-size: 1.25rem;
     margin-bottom: 30px;
   }
+  .news-title {
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+  }
   .sec-title::before,
   .sec-title::after {
+    width: 18%;
+  }
+  .news-title::before,
+  .news-title::after {
     width: 18%;
   }
 
