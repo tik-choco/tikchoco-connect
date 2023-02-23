@@ -1,0 +1,3 @@
+#Macでコミットすると.DS_Storeというゴミが入るため追加。.DS_Storeがあった場合削除。
+
+.DS_Store
