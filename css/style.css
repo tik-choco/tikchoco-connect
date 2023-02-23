@@ -1,13 +1,13 @@
 @charset "UTF-8";
 @import url(https://cdn.jsdelivr.net/gh/mailtoharshit/San-Francisco-Font-/sanfrancisco.css);
-@import url(https://fonts.cdnfonts.com/css/sf-pro-display);
+@import url(font/font.css);
 html {
   font-size: 100%;
 }
 body {
   color: #121212;
   background-color: #414141;
-  font-family:"Hiragino Sans","ヒラギノ角ゴシック","San Francisco",'SF Pro Display','Noto Sans JP', sans-serif;
+  font-family:"San Francisco",'SF Pro Display',"Hiragino Sans","ヒラギノ角ゴシック",'Noto Sans JP', sans-serif;
 }
 a {
   color: #121212;
