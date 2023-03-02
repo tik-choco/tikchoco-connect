@@ -1,132 +1,110 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <title>TikChoco Connect 2023</title>
-    <meta charset="utf-8">
-    <title>TikChoco Connect 2023</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="content-language" content="ja" />
-    <meta name="description" content="「TikChoco Connect 」では、TikChoco制作の最新ゲーム情報をお届けいたします。" />
-    <meta name="keywords" content="TikChocoConnect,TikChoco,TikChoco Connect,TikChoco Connect2023" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="TikChoco Connect" />
-    <meta http-equiv="Content-Script-Type" content="text/JavaScript" />
-    <meta http-equiv="Content-Style-Type" content="text/css" />
-    <meta name="subject" content="「TikChoco Connect 」では、TikChoco制作の最新ゲーム情報をお届けいたします。" />
-    <meta name="abstract" content="「TikChoco Connect 」では、TikChoco制作の最新ゲーム情報をお届けいたします。" />
-    <meta name="author" content="TikChoco" />
-    <meta name="owner" content="TikChoco" />
-    <meta name="designer" content="TikChoco" />
-    <meta name="pubrisher" content="TikChoco" />
-    <meta name="copyright" content="Copyright © TikChoco All Rights Reserved." />
-    <meta name="country code" scheme="81" />
-    <meta name="Targted Geographic Area" content="Japan" />
-    <meta name="distribution" content="Global" />
-    <meta name="coverage" content="Japan" />
-    <meta name="robots" content="INDEX,NOFOLLOW" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="robots" content="NOINDEX,NOFOLLOW" />
     <meta name="robots" content="NOARCHIVE" />
-    <meta http-equiv="pragma" content="no-cache" />
-    <meta name="robots" content="NOIMAGEINDEX" />
-    <meta name="robots" content="NOIMAGECLICK" />
-    <meta name="expires" content="Novenbar 10, 1980" />
-    <meta name="revisit-after" content="2 days" />
-    <meta name="google" content="notranslate" />
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="css/ress.min.css">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet"> -->
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/jquery.js"></script>
-    <script src="js/main.js"></script>
-  </head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>TikChoco Connect</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+      <!--Main Navigation-->
+  <header>
+    <style>
+      #intro {
+        background-image: url(30015512-7ead-4a0c-aa67-a354a7e9c333.png);
+        height: 100vh;
+      }
 
-  <body>
-    <header id="header">
-      <h1 class="site-title">
-        <a href="index.html"><img src="img/logo.png" alt=""></a>
-        
-        
-      </h1>
+      /* Height for devices larger than 576px */
+      @media (min-width: 992px) {
+        #intro {
+          margin-top: -58.59px;
+        }
+      }
 
-      <nav id="navi">
-        <ul class="nav-menu">
-          <li><a href="#">HOME</a></li>
-          <li><a href="#project">今回発表したもの</a></li>
-          <li><a href="#video_area">冒頭基調講演</a></li>
-          <li><a href="#contact">お問い合わせ</a></li>
-          
-          
-        </ul>
-        <ul class="nav-sns">
-          <li><a href="https://twitter.com/intent/follow?screen_name=tikchoco" target="_blank">Twitter</a></li>
-        </ul>
-      </nav>
+      .navbar .nav-link {
+        color: #fff !important;
+      }
+    </style>
 
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand nav-link" target="_blank" href="#">
+          <strong>TikChoco Connect</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+          aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          </ul>
+
+          <ul class="navbar-nav d-flex flex-row">
+            <!-- Icons -->
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="https://www.youtube.com/@tik-choco" rel="nofollow"
+                target="_blank">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="https://twitter.com/tikchoco" rel="nofollow" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <!-- <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="https://github.com/" rel="nofollow" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li> -->
+          </ul>
+        </div>
       </div>
+    </nav>
+    <!-- Navbar -->
 
-      <div id="mask"></div>
-    </header>
-
-    <div class="container">
-      <main>
-        <div id="video">
-          <video class="bg-video" src="video/headmost.v6.mp4" loop autoplay muted playsinline></video>
-        </div>
-
-        <section id="project">
-          <div class="wrapper">
-            <h2 class="sec-title">今回発表したものをご紹介</h2>
-            <ul class="list">
-              <li>
-                <a href="vroidhub">
-                  <img src="img/vroidhub.webp" width="100%" height="100%" alt="">
-                  <p class="name">VRoidHubで自作のVRMモデルが読み込めます。</p>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section id="video_area">
-          <div class="wrapper">
-            <h2 class="sec-title">VIDEO</h2>
-            <div class="player">
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/kJFBjG2eSuk?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-          </div>
-        </section>
-
-
-        <section id="contact">
-          <div class="wrapper">
-            <h2 class="sec-title">Support</h2>
-            <p>お問い合わせは下記からお願いいたします。</p>
-            <div class="link">
-              <a class="item" href="https://discord.gg/2YteZwnUWv">
-                <img src="img/icon-community.png" width="40px" alt=""><br>コミュニティー
-              </a>
-              <a class="item" href="https://tik-choco.com/contact/">
-                <img src="img/icon-support.png" width="40px" alt=""><br>お問い合わせフォーム
-              </a>
+    <!-- Background image -->
+    <div id="intro" class="bg-image shadow-2-strong">
+      <div class="mask d-flex align-items-center h-100" style="background-color: rgba(0, 0, 0, 0.8);">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-5 col-md-8">
+             <img class="bg-white rounded shadow-5-strong p-5" src="73531c078f4e68d46e7624a051f13517_33a73c94c4074cb9c456f0091e465dd7.gif" width="100%">
             </div>
           </div>
-        </section>
-      </main>
-
-      <footer id="footer">
-        <a id="to-top" href="#"></a>
-        <p class="copyright">Copyright &copy; TikChoco All Rights Reserved.</p>
-      </footer>
+        </div>
+      </div>
     </div>
-  </body>
+    <!-- Background image -->
+  </header>
+  <!--Main Navigation-->
+
+  <!--Footer-->
+  <footer class="bg-light text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      ©  Copyright:
+      <a class="text-dark" href="https://tc.tik-choco.com/"> TikChoco </a>All Rights Reserved.
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!--Footer-->
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
 </html>
