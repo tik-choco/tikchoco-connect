@@ -30,3 +30,19 @@ body {
         }
        
       }
+
+      #404_intro {
+        background-image: url(https://tik-choco.github.io/tikchoco-connect/30015512-7ead-4a0c-aa67-a354a7e9c333.png);
+        height: 100vh;
+      }
+
+      /* Height for devices larger than 576px */
+      @media (min-width: 992px) {
+        #404_intro {
+          margin-top: -58.59px;
+        }
+      }
+
+      .navbar .nav-link {
+        color: #fff !important;
+      }
