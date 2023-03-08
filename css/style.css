@@ -34,16 +34,29 @@ body {
       @media (min-width: 992px) {
         #intro {
           margin-top: -58.59px;
-          /* height: 70vh !important; */
+          height: 40vh !important;
           z-index: -20000;
         }
       }
   
+      @media screen and (max-width:992px) {
+ 
+        #intro {
+          margin-top: -58.59px;
+          height: 40vh !important;
+          z-index: -20000;
+        }
+        .navbar .nav-link {
+          color: #fff !important;
+          z-index: 3000å;
+        }
+       
+      }
       .navbar .nav-link {
         color: #fff !important;
       }
 
-      #three-container {
+      /* #three-container {
         z-index: -2;
         position: absolute;
         overflow: hidden;
@@ -137,4 +150,4 @@ body {
             background-position: center 100%;
         }
     }
-    
+     */
