@@ -3,32 +3,6 @@ body {
     font-family:
       -apple-system, BlinkMacSystemFont,
       "Hiragino Kaku Gothic ProN", sans-serif;
-      color: #fff;
-  }
-
-  .grainy-gradient-intro:before {
-    background: #fff;
-    filter: url(#f);
-  }
-  .grainy-gradient-intro:before, .grainy-gradient-intro:after {
-    position: fixed;
-    inset: 0;
-    z-index: -1;
-    --grad: radial-gradient(at 50%, red, rgba(255, 0, 0, 0.3) 55%, transparent 80%);
-    --mask: var(--grad), var(--grad);
-    -webkit-mask: var(--mask);
-    -webkit-mask-composite: source-in;
-    -webkit-mask: var(--mask);
-    mask: var(--mask);
-    -webkit-mask-composite: source-in, xor;
-    mask-composite: intersect;
-    mix-blend-mode: unset;
-    content: "";
-  }
-  
-  .grainy-gradient-intro:after {
-     background: linear-gradient(
-  90deg, #760dfe 20%, #f51b26, #fd9900);
   }
 
       /* Height for devices larger than 576px */
@@ -37,6 +11,9 @@ body {
           margin-top: -58.59px;
           height: 40vh !important;
           z-index: -20000;
+        }
+        .navbar .nav-link {
+          color: #fff !important;
         }
       }
   
@@ -53,104 +30,3 @@ body {
         }
        
       }
-      .navbar .nav-link {
-        color: #fff !important;
-      }
-
-      /* #three-container {
-        z-index: -2;
-        position: absolute;
-        overflow: hidden;
-        width: 100%;
-        height: 100vh;
-        margin-top: -58.59px;
-      }
-
-      #intro {
-        height: 100vh;
-        margin-top: -58.59px;
-        z-index: -1;
-        color: #000;
-      }
-      footer{
-        color: #000;
-      }
-
-      body {
-        background-color: #333;
-        color: #ccc;
-        text-align: center;
-    }
-    body a, body a:visited {
-        color: #ccc;
-        text-decoration: none;
-    }
-    body a:hover {
-        color: #aaa;
-    }
-    .fade-wrapper {
-        position: relative;
-        width: 480px;
-        margin: auto;
-    }
-    .fade-text {
-        display: block;
-        color: transparent;
-        font-size: 30px;
-        line-height: 1.4;
-        margin-bottom: 40px;
-        background-clip: text;
-        -webkit-background-clip: text;
-        background-size: 300% 300%;
-    }
-    .fade-text.to__right {
-        background-image: linear-gradient(to right, #fff 30%, rgba(255, 255, 255, 0) 60%);
-        background-position: left 100% center;
-        transform: translate(-20px, 0);
-        animation: toRight var(--duration, 2.4s) var(--ease) var(--delay, 0.6s) forwards;
-    }
-    .fade-text.to__left {
-        background-image: linear-gradient(to left, #fff 30%, rgba(255, 255, 255, 0) 60%);
-        background-position: right 100% center;
-        transform: translate(20px, 0);
-        animation: toLeft var(--duration, 2.4s) var(--ease) var(--delay, 0.6s) forwards;
-    }
-    .fade-text.to__top {
-        background-image: linear-gradient(to top, #fff 30%, rgba(255, 255, 255, 0) 50%);
-        background-position: center 0;
-        transform: translate(0, 20px);
-        animation: toTop var(--duration, 2.4s) var(--ease) var(--delay, 0.6s) forwards;
-    }
-    .fade-text.to__bottom {
-        background-image: linear-gradient(to bottom, #fff 30%, rgba(255, 255, 255, 0) 50%);
-        background-position: center 100%;
-        transform: translate(0, -20px);
-        animation: toBottom var(--duration, 2.4s) var(--ease) var(--delay, 0.6s) forwards;
-    }
-    @keyframes toRight {
-        100% {
-            transform: translate(0, 0);
-            background-position: left 0% center;
-        }
-    }
-    @keyframes toLeft {
-        100% {
-            transform: translate(0, 0);
-            background-position: right 0% center;
-        }
-    }
-    @keyframes toBottom {
-        100% {
-            transform: translate(0, 0);
-            background-position: center 0%;
-        }
-    }
-    @keyframes toTop {
-        100% {
-            transform: translate(0, 0);
-            background-position: center 100%;
-        }
-    }
-     */
-
-     
