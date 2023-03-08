@@ -3,10 +3,11 @@ body {
     font-family:
       -apple-system, BlinkMacSystemFont,
       "Hiragino Kaku Gothic ProN", sans-serif;
+      color: #fff;
   }
 
   .grainy-gradient-intro:before {
-    background: #000;
+    background: #fff;
     filter: url(#f);
   }
   .grainy-gradient-intro:before, .grainy-gradient-intro:after {
