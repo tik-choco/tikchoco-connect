@@ -23,35 +23,28 @@
     type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"
   ></script>
-  <style>
-    /* Height for devices larger than 576px */
-    @media (min-width: 992px) {
-      #intro {
-        margin-top: -58.59px;
-        /* height: 70vh !important; */
-      }
-    }
 
-    .navbar .nav-link {
-      color: #fff !important;
-    }
-  </style>
+  <link
+  href="css/import.css"
+  rel="stylesheet"
+/>
   </head>
 
   <body>
     <header>
+
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
         <div class="container-fluid">
           <!-- Navbar brand -->
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand nav-link" target="_blank" href="#">
             <img
-              src="img/cropped-i0-1.webp"
-              height="30"
-              alt=""
-              loading="lazy"
-            />
-            TikChoco Connect
+            src="img/cropped-i0-1.webp"
+            height="30"
+            alt=""
+            loading="lazy"
+          />
+            <strong>TikChoco Connect</strong>
           </a>
           <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
             aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
@@ -78,8 +71,10 @@
                 <a class="nav-link" href="about">About</a>
               </li>
             </ul>
+            </ul>
   
             <ul class="navbar-nav d-flex flex-row">
+              <!-- Icons -->
               <li class="nav-item me-3 me-lg-0">
                 <a class="nav-link" href="https://www.youtube.com/@tik-choco" rel="nofollow"
                   target="_blank">
@@ -91,13 +86,29 @@
                   <i class="fab fa-twitter"></i>
                 </a>
               </li>
+              <!-- <li class="nav-item me-3 me-lg-0">
+                <a class="nav-link" href="https://github.com/" rel="nofollow" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li> -->
             </ul>
           </div>
         </div>
       </nav>
+      <!-- Navbar -->
     </header>
-              <!-- Background image -->
-              <div id="intro" class="bg-image vh-100 shadow-1-strong">
+    <section class="grainy-gradient-intro">
+      <svg height="0" width="0">
+        <filter id='f'>
+          <feTurbulence type='fractalNoise' baseFrequency='.5' />
+        </filter>
+      </svg>
+      <div class="d-flex justify-content-center align-items-center text-center " style="height: calc(100vh - 26px);z-index: 200;">
+        <h1 class="display-4 fw-bold text-uppercase text-dark mb-0" style="letter-spacing: 15px;">Expand your Universe</h1>
+      </div>
+    </section>
+ <!-- Background image -->
+              <!-- <div id="intro" class="bg-image vh-100 shadow-1-strong">
                 <video style="min-width: 100%; min-height: 100%;" playsinline autoplay muted loop>
                   <source class="h-100"
                     src="src/intro-min.mp4"
@@ -118,7 +129,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
             <!-- <div class="container my-5 px-5 pt-5 pb-4 shadow-3">
     
           <section class="text-center">
@@ -187,4 +198,5 @@
   <!-- MDB -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <script type="text/javascript" src="js/footer.js"></script>
+  <script type="text/javascript" src="js/top.js"></script>
 </html>

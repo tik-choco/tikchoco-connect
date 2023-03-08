@@ -4,3 +4,56 @@ body {
       -apple-system, BlinkMacSystemFont,
       "Hiragino Kaku Gothic ProN", sans-serif;
   }
+
+  .grainy-gradient-intro:before {
+    background: #000;
+    filter: url(#f);
+  }
+  .grainy-gradient-intro:before, .grainy-gradient-intro:after {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    --grad: radial-gradient(at 50%, red, rgba(255, 0, 0, 0.3) 55%, transparent 80%);
+    --mask: var(--grad), var(--grad);
+    -webkit-mask: var(--mask);
+    -webkit-mask-composite: source-in;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+    -webkit-mask-composite: source-in, xor;
+    mask-composite: intersect;
+    mix-blend-mode: unset;
+    content: "";
+  }
+  
+  .grainy-gradient-intro:after {
+     background: linear-gradient(
+  90deg, #760dfe 20%, #f51b26, #fd9900);
+  }
+
+      /* Height for devices larger than 576px */
+      @media (min-width: 992px) {
+        #intro {
+          margin-top: -58.59px;
+          /* height: 70vh !important; */
+          z-index: -20000;
+        }
+      }
+  
+      .navbar .nav-link {
+        color: #000 !important;
+      }
+
+      #three-container {
+        z-index: -2;
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+        height: 100vh;
+        margin-top: -58.59px;
+      }
+
+      #intro {
+        height: 100vh;
+        margin-top: -58.59px;
+        z-index: -1;
+      }
