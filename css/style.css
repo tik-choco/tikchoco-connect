@@ -99,6 +99,23 @@ h1 {
     padding:20px;
 	font-size: 1.2rem;
 }
+.center {
+  text-align:center;
+  padding:20px;
+font-size: 1.2rem;
+}
+
+.concept{
+  background: linear-gradient(to right,#e60000,#f39800,#fff100,#009944,#0068b7,#1d2088,#920783);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 120%;
+  font-weight: bold;
+  display: inline-block;
+}
+@keyframes concept{
+  100% { background-position: 200%; }
+}
 
 a {
     color:#333;
