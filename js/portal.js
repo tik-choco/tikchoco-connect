@@ -42,8 +42,8 @@ $(function(){
 		
 	});
 	//初期設定
-	getPage("index.html");
-	var lastpage = "404.html";
+	getPage("../index.html");
+	var lastpage = "../404.html";
 
 	//ページを取得してくる
     function getPage(elm){
