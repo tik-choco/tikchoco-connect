@@ -1,0 +1,23 @@
+.news {
+    display: block;
+    background:#fff;
+    padding:20px;
+}
+.news h1{
+    font-size: large;
+}
+.news p .center{
+    text-align: center;
+}
+
+.news img{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.wrapper {
+    width:90%;
+    margin:20px auto;
+}
