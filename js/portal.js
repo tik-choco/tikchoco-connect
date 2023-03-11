@@ -1,7 +1,7 @@
 //共通コンテンツロード
 function header(){
     $.ajax({
-        url: "../inc/header.html",
+        url: "header.html",
         cache: false,
         success: function(html){
             document.write(html);
@@ -13,7 +13,7 @@ function header(){
 
 function footer(){
     $.ajax({
-        url: "../inc/footer.html",
+        url: "footer.html",
         cache: false,
         success: function(html){
             document.write(html);
