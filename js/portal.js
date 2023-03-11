@@ -1,3 +1,4 @@
+//共通コンテンツロード
 function header(){
     $.ajax({
         url: "../include/header.html",
@@ -7,6 +8,7 @@ function header(){
         }
     });
 }
+
 
 
 function footer(){
