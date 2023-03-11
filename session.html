@@ -79,53 +79,35 @@
         </div>
       </nav>
       <!-- Navbar -->
-    <!-- <div class="container">
-          <section class="container my-3 p-3 text-center"><h2>近日開催予定のイベント</h2></section>
+    <div class="container">
 
-        <div class="container my-5 p-5 shadow-3">
-          <section>
+        <div class="container my-5 px-5 pt-5 pb-4 shadow-3">
+          <!--Section: Projects 1-->
+          <section class="text-center">
+            <h3 class="mb-5">KeyNote</h3>
+    
             <div class="row">
-              <div class="col-md-6">
-                <img
-                  src="https://mdbootstrap.com/img/new/slides/303.jpg"
-                  class="img-fluid shadow-2-strong"
-                />
-              </div>
-              <div class="col-md-6">
-                <h3 class="mb-3">TikChoco Connect</h3>
+              <div class="col-md-6 mb-4">
+                <div class="bg-image  mb-4 shadow-1-strong rounded">
+                  <span class="video-link demo-link" data-video-id="kJFBjG2eSuk"><img
+                    src="https://img.youtube.com/vi/kJFBjG2eSuk/maxresdefault.jpg"
+                    class="img-fluid shadow-2-strong"
+                  /></span>
+                  <!-- <a href="#!">
+                    <div class="mask"></div>
+                  </a> -->
+                </div>
+                <h5 class="mb-3">第1回TikChoco Connect</h5>
                 <p class="mb-4">
-                  オンラインゲーム TikChocoOnlineを無料でダウンロードし、インストールしましょう
+                  2023年2月19日
                 </p>
-                <button type="button" class="btn btn-primary">Download</button>
               </div>
             </div>
           </section>
-        </div> -->
-
-        <section class="container my-3 p-3 text-center"><h2>これまでのイベント</h2></section>
-
-        <div class="container my-5 p-5 shadow-3">
-          <!--Section: Content 3-->
-          <section>
-            <div class="row">
-              <div class="col-md-6">
-                <img
-                  src="https://img.youtube.com/vi/kJFBjG2eSuk/maxresdefault.jpg"
-                  class="img-fluid shadow-2-strong"
-                />
-              </div>
-              <div class="col-md-6">
-                <h3 class="mb-3">第1回TikChoco Connect</h3>
-                <p class="mb-4">
-                  「TikChoco Connect」では、TikChoco制作の最新ゲーム「TikChoco Online」の情報をお届け致しました。
-                </p>
-                <a type="button" class="btn btn-primary" href="2023Feb">イベントページへ</a>
-              </div>
-            </div>
-          </section>
-          <!--Section: Content 3-->
+          <!--Section: Projects 1-->
         </div>
-  
+    
+
   </div>
   <footer id="footer" class="footer">
     <div class="md-flex md-justify-between">
@@ -182,8 +164,27 @@
     </div>
   </footer>
   </body>
-
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  
   <!-- MDB -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <script type="text/javascript" src="js/footer.js"></script>
+  <script src="js/videoLightning.js"></script>
+  <script>
+    videoLightning({
+      elements: [
+        {
+          ".video-link": {
+            autoplay: 1,
+            easeOut: 1000,
+            bdColor: "#ddd",
+            bdOpacity: 0.8,
+            glow: 20,
+            glowColor: "#000"
+          }
+        }
+      ]
+    });
+    
+  </script>
 </html>
