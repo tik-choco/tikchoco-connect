@@ -1,6 +1,6 @@
 function header(){
     $.ajax({
-        url: "/include/header.html",
+        url: "../include/header.html",
         cache: false,
         success: function(html){
             document.write(html);
@@ -11,7 +11,7 @@ function header(){
 
 function footer(){
     $.ajax({
-        url: "/include/footer.html",
+        url: "../include/footer.html",
         cache: false,
         success: function(html){
             document.write(html);
