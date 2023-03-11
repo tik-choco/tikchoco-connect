@@ -1,0 +1,25 @@
+      /* Height for devices larger than 576px */
+      @media (min-width: 992px) {
+        #intro {
+          margin-top: -58.59px;
+          height: 40vh !important;
+          z-index: -20000;
+        }
+        .navbar .nav-link {
+          color: #fff !important;
+        }
+      }
+  
+      @media screen and (max-width:992px) {
+ 
+        #intro {
+          margin-top: -58.59px;
+          height: 40vh !important;
+          z-index: -20000;
+        }
+        .navbar .nav-link {
+          color: #fff !important;
+          z-index: 3000å;
+        }
+       
+      }
