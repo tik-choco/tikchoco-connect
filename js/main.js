@@ -1,3 +1,5 @@
+//Slider
+
 $(function () {
     $(".slider").slick({
       arrows: false,
@@ -11,6 +13,9 @@ $(function () {
       speed: 400,
     });
   });
+
+
+  //Nav:mobile mode
 
   document.addEventListener('DOMContentLoaded', () => {
 
