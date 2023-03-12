@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/*==================================================
+ニュースティッカーのためのcss
+===================================*/
+/*ニュース1行の周りの余白*/
+.news a{
+    display: block;
+    background:#fff;
+    padding:20px;
+}
+
+/*日付*/
+.news span {
+    display:inline-block;
+    font-size:0.8rem;
+    margin-right:10px;
+    color:#777;
+}
+
+/*768px以下の見た目　※1行のままにしたい場合は不要*/
+@media screen and (max-width:768px) {
+    .news {
+        padding:20px;
+        background:#fff;
+    }
+
+    .news li {
+        border-bottom:1px dashed #ccc;
+    }
+
+    .news li:last-child {
+        border-bottom:none;
+    }
+    .news span {
+        display:block;
+    padding-bottom:10px;
+    }
+}
+
+/*========= レイアウトのためのCSS ===============*/
+
