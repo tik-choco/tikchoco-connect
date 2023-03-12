@@ -19,4 +19,67 @@
     font-size: 80px;
     color: white;
 }
+
+/*768px以下の見た目　※1行のままにしたい場合は不要*/
+@media screen and (max-width:768px) {
+  .gallery-cell  img{
+    width: 768px;
+    height: 432px;
+    margin-right: 10px;
+    background: #8C8;
+    /* counter-increment: gallery-cell; */
+  }
+   
+  /* cell number */
+.gallery-cell:before  img{
+    display: block;
+    text-align: center;
+    /* content: counter(gallery-cell); */
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+
+}
+/* iPhone14 Pro Maxおよび特殊サイズスマホ用 */
+@media screen and (max-width: 928px){
+  .gallery-cell  img{
+    width: 928px;
+    height:　522px;
+    margin-right: 10px;
+    background: #8C8;
+    /* counter-increment: gallery-cell; */
+  }
+   
+  /* cell number */
+.gallery-cell:before  img{
+    display: block;
+    text-align: center;
+    /* content: counter(gallery-cell); */
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+} 
+
+}
+/* スマホ */
+@media screen and (max-width: 480px) { 
+  .gallery-cell  img{
+    width: 480px;
+    height:　270px;
+    margin-right: 10px;
+    background: #8C8;
+    /* counter-increment: gallery-cell; */
+  }
+   
+  /* cell number */
+.gallery-cell:before  img{
+    display: block;
+    text-align: center;
+    /* content: counter(gallery-cell); */
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+} 
+}
   
