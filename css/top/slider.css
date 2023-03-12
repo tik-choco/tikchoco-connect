@@ -22,12 +22,15 @@ color: white;
 
 /* スマホ */
 @media screen and (max-width: 480px) { 
+  .top_slider{
+    display: none;
+  }
   .gallery {
     background: #EEE;
-    width: 480px;
   }
   .gallery-cell  img{
-    width: 480px;
+    max-width: 480px;
+    width: 480%;
     height:　270px;
     margin-right: 10px;
     background: #8C8;
@@ -42,6 +45,6 @@ color: white;
     line-height: 200px;
     font-size: 80px;
     color: white;
-} 
+}
 }
   
