@@ -50,7 +50,6 @@ new function(){
 	addEvent(window,"resize",footerFixed);
 	
 }
-document.write("<script src='/js/cookie_notification.js'></script> ");
 
 (function() {
     const expire = 365; 
