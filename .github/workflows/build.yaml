@@ -24,7 +24,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          node tikchoco-connect/scripts/build.js
+          node scripts/build.js
           git push --force "https://${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" HEAD:${{ inputs.branch }}
         working-directory: ./tikchoco-connect
         shell: bash
