@@ -20,12 +20,10 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-- name: Build and Deploy
-  env:
-    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  run: |
-    bash tikchoco-connect/scripts/build.js
-    git push --force "https://${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" HEAD:${{ inputs.branch }}
-  working-directory: ./tikchoco-connect
-  shell: bash
-
+      - name: Build and Deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        working-directory: ./tikchoco-connect
+        run: |
+          bash scripts/build.js
+          git push --force "https://${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" HEAD:${{ inputs.branch }}
