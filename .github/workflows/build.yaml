@@ -26,5 +26,5 @@ jobs:
         run: |
           node build.js
           git push --force "https://${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" HEAD:${{ inputs.branch }}
-        working-directory: ./tikchoco-connect/scripts
+        working-directory: ./scripts
         shell: bash
