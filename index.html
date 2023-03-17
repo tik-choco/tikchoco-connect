@@ -75,6 +75,9 @@
             <a class="navbar-item" href="https://tik-choco.github.io/tikchoco-connect/news">
               News and Updates
             </a>
+            <a class="navbar-item" href="https://tik-choco.github.io/tikchoco-connect/session">
+              Session
+             </a>
             <div class="navbar-item has-dropdown is-hoverable">
               <a class="navbar-link">
                 これまでのイベント
@@ -137,6 +140,10 @@
         
         TikChoco Connectではテクノロジーとクリエイティブが積み上げてきた歴史と新たなる挑戦<br>
         注力している新技術や研究領域について多岐に渡るセッションを通じてみなさまにお届けします。</p>
+
+        <p　class="center">
+          <span class="video-link demo-link" data-video-id="a2QT-10UuM8"><a class="button is-large is-link is-fullwidth">第２回開発進捗発表会を見よう</a></span>
+        </p>
 
         <h1 class="title is-4">お知らせ</h1>
         <ul class="news">
@@ -214,4 +221,25 @@
   <script src="js/main.js"></script>
   <script src="js/top.js"></script>
   <script src="js/flickity.pkgd.min.js"></script>
+  <script src="js/videoLightning.js"></script>
+  <script>
+    videoLightning({
+      elements: [
+        {
+          ".video-link": {
+            autoplay: 1,
+            easeOut: 1000,
+            bdColor: "#ddd",
+            bdOpacity: 0.8,
+            glow: 20,
+            glowColor: "#000",
+            width: 1280,
+            height: 720
+          }
+        }
+      ]
+    });
+    
+  </script>
+</html>
 </html>
