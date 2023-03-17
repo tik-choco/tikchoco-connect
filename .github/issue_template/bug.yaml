@@ -1,0 +1,52 @@
+title: バグレポートフォーム
+
+steps:
+  - title: 概要
+    fields:
+      - name: summary
+        label: バグの概要
+        type: input
+        required: true
+
+  - title: 再現手順
+    fields:
+      - name: steps
+        label: バグの再現手順
+        type: textarea
+        required: true
+
+  - title: 期待される動作
+    fields:
+      - name: expected_result
+        label: 期待される動作
+        type: input
+        required: true
+
+  - title: 実際の動作
+    fields:
+      - name: actual_result
+        label: 実際の動作
+        type: input
+        required: true
+
+  - title: 環境
+    fields:
+      - name: game_version
+        label: ゲームのバージョン
+        type: input
+        required: true
+      - name: platform
+        label: プラットフォーム
+        type: input
+        required: true
+      - name: other_info
+        label: その他の情報
+        type: input
+
+  - title: その他
+    fields:
+      - name: additional_info
+        label: 修正に向けての提案などがあれば、自由に記述してください。
+        type: textarea
+
+submit_label: 送信する
